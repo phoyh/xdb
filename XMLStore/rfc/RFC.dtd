@@ -1,0 +1,55 @@
+<!ENTITY % NAME       "CDATA">
+<!ENTITY % DATE       "CDATA">
+<!ENTITY % ID         "CDATA">
+<!ENTITY % PRI        "(LOW|MEDIUM|HIGH)">
+<!ENTITY % PROPS      "(summary, description?, related?)">
+<!ELEMENT rfc (miseries?, dangers?, antidotes?)>
+<!ATTLIST rfc
+    author     %NAME;     #REQUIRED
+    date       %DATE;     "today"
+    to         %NAME;     "to all"
+>
+<!ELEMENT miseries (misery)*>
+<!ATTLIST miseries
+    tagType    %ID;    "Miseries"
+>
+<!ELEMENT misery %PROPS;>
+<!ATTLIST misery
+    name       %ID;    #REQUIRED
+    importance %PRI;   "MEDIUM"
+    tagType    %ID;    "Misery"
+>
+<!ELEMENT dangers (danger*)>
+<!ATTLIST dangers
+    tagType    %ID;    "Dangers"
+>
+<!ELEMENT danger %PROPS;>
+<!ATTLIST danger
+    name       %ID;    #REQUIRED
+    importance %PRI;   "MEDIUM"
+    tagType    %ID;    "Danger"
+>
+<!ELEMENT antidotes (antidote*)>
+<!ATTLIST antidotes
+    tagType    %ID;    "Antidotes"
+>
+<!ELEMENT antidote %PROPS;>
+<!ATTLIST antidote
+    name       %ID;    #REQUIRED
+    tagType    %ID;    "Antidote"
+>
+<!ELEMENT related (miseryRef|dangerRef|antidoteRef)*>
+<!ELEMENT summary (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ATTLIST miseryRef
+    name       %ID;    #REQUIRED
+    tagType    %ID;    "Misery"
+>
+<!ATTLIST dangerRef
+    name       %ID;    #REQUIRED
+    tagType    %ID;    "Danger"
+>
+<!ATTLIST antidoteRef
+    name       %ID;    #REQUIRED
+    tagType    %ID;    "Antidote"
+>

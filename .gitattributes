@@ -1,0 +1,3 @@
+docs/** linguist-generated
+lib/** linguist-vendored
+XMLStore/**/*.html linguist-generated

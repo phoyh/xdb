@@ -1,0 +1,14 @@
+<!ENTITY % COLOR "(white|blue|yellow|green|black|brown)">
+<!ELEMENT nba (team+)>
+<!ELEMENT team (player+)>
+<!ATTLIST team
+ name CDATA #REQUIRED
+ shirt %COLOR; "black"
+>
+<!ELEMENT player (age|height|skin)*>
+<!ATTLIST player
+ name CDATA #REQUIRED
+ firstName CDATA #IMPLIED
+>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT height (#PCDATA)>

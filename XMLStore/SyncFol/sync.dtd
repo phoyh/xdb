@@ -1,0 +1,8 @@
+<!ENTITY % PATH "CDATA">
+<!ENTITY % TIME "CDATA">
+<!ELEMENT sync (entry*)>
+<!ATTLIST entry
+   sourceDir %PATH; #REQUIRED
+   destDir %PATH; #REQUIRED
+   lastSync %TIME; #REQUIRED
+>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE sync SYSTEM 'file:///e:/repository/xmlstore/syncFol/sync.dtd'>
+
+<sync>
+  <entry sourceDir="source1" destDir="dest1" lastSync="968815142603" />
+  <entry sourceDir="source2" destDir="dest2" lastSync="994792116000" />
+</sync>
+

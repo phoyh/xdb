@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE xdb SYSTEM "nba.dtd">
+
+<nba>
+ <team name="LA Lakers" shirt="yellow">
+  <player name="O'Neal">
+   <height>7'1"</height>
+   <age>29</age>
+  </player>
+  <player name="Bryant">
+   <height>6'6"</height>
+   <age>23</age>
+  </player>
+  <player name="Fisher" firstName="Derek">
+   <height>5'10"</height>
+   <age>31</age>
+  </player>
+ </team>
+ <team name="PL Blazers">
+  <player name="Pippen">
+   <age>36</age>
+  </player>
+  <player name="Smith">
+   <height>6'8"</height>
+  </player>
+  <player name="Sabonis">
+   <height>7'4"</height>
+   <age>37</age>
+  </player>
+ </team>
+</nba>
